@@ -1,4 +1,4 @@
-package com.funshopper.service.FunshopperService;
+package com.funshopper.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

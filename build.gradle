@@ -44,12 +44,17 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	implementation "io.springfox:springfox-swagger2:2.9.2"
+	implementation "io.springfox:springfox-swagger-ui:2.9.2"
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
+	testImplementation("com.github.tomakehurst:wiremock:1.58")
+	testImplementation("org.mockito:mockito-core:2.23.4")
+	testImplementation group: 'pl.pojo', name: 'pojo-tester', version: '0.7.6'
 }
 
 dependencyManagement {
