@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient(name = "${feign.name}", url = "${feign.url}", fallback = ProductFallback.class)
+@FeignClient(name = "FunshopperDomain", fallback = ProductFallback.class)
 public interface ProductService {
     @GetMapping(value = "/products")
     List<Product> getProducts();
