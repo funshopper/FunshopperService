@@ -1,7 +1,8 @@
 HELP.md
 .gradle
 build/
-
+!**/src/main/**
+!**/src/test/**
 
 ### STS ###
 .apt_generated
@@ -9,7 +10,7 @@ build/
 .factorypath
 .project
 .settings
-.springBeans
+.springBeansgi
 .sts4-cache
 
 ### IntelliJ IDEA ###
